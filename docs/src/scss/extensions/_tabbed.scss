@@ -1,0 +1,48 @@
+/* Dark mode changes */
+[data-md-color-primary^="drac-"] {
+  .md-typeset {
+    .tabbed-set > .tabbed-content {
+      box-shadow: 0 px2rem(-1px) var(--md-default-fg-color--lighter);
+    }
+  }
+}
+
+/* Style code blocks to fill full tab,
+   but otherwise, pad content. */
+.md-typeset {
+  .tabbed-set > .tabbed-content {
+    padding: 0 px2rem(12px);
+    overflow: hidden;
+  }
+
+  .tabbed-set {
+    > input {
+      &:checked + label {
+        & + .tabbed-content {
+          font-size: ms(-1);
+
+          > {
+            pre,
+            .codehilite,
+            .codehilitetable,
+            .highlight,
+            .highlighttable {
+
+           	  &:only-child code {
+                margin-right: px2rem(-12px);
+                margin-left: px2rem(-12px);
+                padding-right: px2rem(12px);
+                padding-left: px2rem(12px);
+
+                .hll {
+                  margin: 0 px2rem(-12px);
+                  padding: 0 px2rem(12px);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

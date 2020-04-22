@@ -1,0 +1,33 @@
+/* Dark mode style */
+[data-md-color-primary^="drac-"] {
+  .md-typeset {
+    del.critic {
+      background-color: #{mix($drac-pink, $drac-bg, 50%)};
+    }
+
+    ins.critic {
+      background-color: #{mix($drac-green, $drac-bg, 50%)};
+    }
+
+    mark.critic {
+      background-color: #{mix($drac-orange, $drac-bg, 50%)};
+    }
+  }
+}
+
+/* Don't use box shadows */
+.md-typeset {
+  del,
+  ins,
+  mark {
+    &.critic {
+      padding: 0 px2em(4px, 16px);
+      color: unset;
+      box-shadow: none;
+    }
+  }
+
+  .critic.break {
+    margin: 0;
+  }
+}
