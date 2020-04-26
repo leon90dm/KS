@@ -10,7 +10,7 @@ else
     echo "Found Filed Changed!\n $files"
 fi
 CURRENT=`date +%Y%m%d%H%M%S`
-echo 'pull origin/master'
+echo 'pull origin master'
 git pull origin/master
 echo "add changed files."
 git add .
