@@ -78,3 +78,5 @@ manifest.json
 # Patches
 *.patch
 docs/src/dictionary/hunspell/
+
+logs/
