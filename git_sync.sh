@@ -6,6 +6,7 @@ files=`git status -s`
 echo "$files"
 if [ "$files" == "" ]; then
     echo "No Files Changed, Exit."
+    exit 0
 else
     echo "Found Filed Changed!\n $files"
 fi
