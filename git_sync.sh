@@ -19,4 +19,4 @@ echo "commit."
 git commit -am "auto commit at $CURRENT"
 echo "push."
 git push
-
+echo "*************************Finished  ${CURRENT} ************************"
