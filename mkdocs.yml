@@ -3,8 +3,8 @@ site_url: https://leon90dm.github.io/KS
 repo_url: https://github.com/leon90dm/KS
 edit_uri: tree/master/docs/src/markdown
 site_description: Bilbo's Knowledge Store
-# copyright: |
-#   Copyright &copy; 2014 - 2020 <a href="https://github.com/leon90dm"  target="_blank" rel="noopener">Isaac Muse</a>
+copyright: |
+  Copyright &copy; 2020 - 2030 <a href="https://github.com/leon90dm"  target="_blank" rel="noopener">Bilbodai</a>
 
 docs_dir: docs/src/markdown
 theme:
@@ -72,15 +72,15 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  # - pymdownx.escapeall:
-      # hardbreak: True
-      # nbsp: True
+  - pymdownx.escapeall:
+      hardbreak: True
+      nbsp: True
   - pymdownx.tasklist:
       custom_checkbox: true
-  # - pymdownx.progressbar:
+  - pymdownx.progressbar:
   - pymdownx.arithmatex:
   - pymdownx.mark:
-  # - pymdownx.striphtml:
+  - pymdownx.striphtml:
   - pymdownx.keys:
       separator: "\uff0b"
   - pymdownx.details:
@@ -97,12 +97,10 @@ markdown_extensions:
 
 extra_css:
   - assets/pymdownx-extras/extra-cd565ac465.css
-  # - https://unpkg.com/mermaid@7.1.2/dist/mermaid.css
+
 extra_javascript:
   - assets/pymdownx-extras/extra-835d408546.js
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
-  # - https://unpkg.com/mermaid@8.5.0/dist/mermaid.min.js
-
 
 
 plugins:
