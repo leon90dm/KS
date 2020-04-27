@@ -20,5 +20,5 @@ git commit -am "auto commit at $CURRENT"
 echo "push."
 git push
 echo "gh-deploy"
-sh gh-deploy.sh
+sh $KSDIR/gh-deploy.sh
 echo "*************************Finished  ${CURRENT} ************************"
