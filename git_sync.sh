@@ -12,7 +12,7 @@ else
 fi
 CURRENT=`date +%Y%m%d%H%M%S`
 echo 'pull origin master'
-git pull origin/master
+git pull origin master
 echo "add changed files."
 git add .
 echo "commit."
